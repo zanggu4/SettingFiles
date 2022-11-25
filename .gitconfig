@@ -1,0 +1,11 @@
+[alias]
+lg = log --all --decorate --oneline --graph
+lg2 = log --all --graph --pretty=format:'%C(Yellow)%h %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s' --date=short
+
+[init]
+	defaultBranch = main
+[user]
+	email = zanggu3@nate.com
+	name = Hyeonjae Lee
+[core]
+	excludesfile = ~/.gitignore_global
