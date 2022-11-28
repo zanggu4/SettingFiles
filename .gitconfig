@@ -1,6 +1,7 @@
 [alias]
 lg = log --all --decorate --oneline --graph
-lg2 = log --all --graph --pretty=format:'%C(Yellow)%h %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s' --date=short
+lg2 = log --all --decorate --graph --abbrev-commit --format=format:'%C(auto)%h%d %s%C(reset)%C(dim white) - %an%C(reset)'
+lg3 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [init]
 	defaultBranch = main
